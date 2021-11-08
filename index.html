@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+
+    <script src="js/main.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CALCULATOR</h1>
+    </header>
+
+    <main>
+        <div class="calculator-form">
+            <form method="POST" action="">
+                <label for="brut">Votre salaire brut</label>
+                <input type="number" name="brut" id="brut" placeholder="1500" /><span>$</span>
+                
+                <label><input type="radio" name="sexe" value="homme">Homme</label>
+                <label><input type="radio" name="sexe" value="femme">Femme</label>
+
+                <label for="persons">Nombre de personnes à charge :</label>
+                <select name="persons" id="persons">
+                    <option value="">--Faites votre choix--</option>
+                    <option value="1">1 personne</option>
+                    <option value="2">2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">Plus de 3 personnes</option>
+                </select>
+
+                <label for="bonus">Percevez-vous une allocation ou un bonus ?</label>
+                <select name="bonus" id="bonus">
+                    <option value="">--Faites votre choix--</option>
+                    <option value="allocation">Allocation</option>
+                    <option value="bonus">Bonus</option>
+                    <option value="rien">Rien</option>
+                </select>
+
+                <button type="submit">Calculer</button>
+
+            </form>
+        </div>
+
+        <div class="calculator-result">
+            <h2>Résultat : <span></span> $</h2>
+        </div>
+        
+    </main>
+    
+</body>
+</html>
