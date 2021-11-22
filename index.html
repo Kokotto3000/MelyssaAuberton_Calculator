@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR</title>
 
-    <script src="js/main.js" defer></script>
+    <script src="js/index.js" type="module" defer></script>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,8 +22,10 @@
                 <label for="brut">Votre salaire brut</label>
                 <input type="number" name="brut" id="brut" placeholder="1500" /><span>$</span>
                 
-                <label><input type="radio" name="sexe" value="homme">Homme</label>
-                <label><input type="radio" name="sexe" value="femme">Femme</label>
+                <fieldset>
+                    <label><input type="radio" name="sex" value="homme">Homme</label>
+                    <label><input type="radio" name="sex" value="femme">Femme</label>
+                </fieldset>               
 
                 <label for="persons">Nombre de personnes à charge :</label>
                 <select name="persons" id="persons">
@@ -48,7 +50,7 @@
         </div>
 
         <div class="calculator-result">
-            <h2>Résultat : <span></span> $</h2>
+            <h2>Votre salaire net : <span></span> $</h2>
         </div>
         
     </main>
