@@ -11,4 +11,16 @@ export default class Display{
     displayResult(){
         RESULT.innerHTML= this.result;
     }
+
+    displayError(type){
+        switch(type){
+            case "salary":
+                console.log("entrez un nombre valide s'il vous plait");
+                break;
+            case "sex":
+                console.log("choisissez votre sexe s'il vous plait");
+            default :
+                console.log("error");
+        }
+    }
 }
